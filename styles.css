@@ -19,9 +19,10 @@ a{
 }
 .description{
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #727171;
+    margin-bottom: 10px;
 }
 .container {
     max-width: 1000px;
