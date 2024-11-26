@@ -1,209 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@1,500&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
-body{
-    font-family: Inter, sans-serif;
-    background-color: black;
-    color: #fff;
+body {
+  font-family: Inter, sans-serif;
+  background-color: black;
+  color: #fff;
 }
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
-.description{
-    margin-top: 1rem;
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #727171;
-    margin-bottom: 10px;
+.description {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #727171;
+  margin-bottom: 10px;
+  line-height: 30px;
 }
 .container {
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    padding: 5rem;
-    background: #070707;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  background: #070707;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
-.title{
-    color: #FF7613;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
+.title {
+  color: #ff7613;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        /* grid-template-columns: 1fr; */
-        display: flex;
-        flex-direction: column;
-        padding: 3rem;
-        gap: 7rem;
-    }
+  .container {
+    width: 100%;
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 7rem;
+  }
 }
 
 .group-1,
 .group-2 {
-	display: flex;
-	flex-direction: column;
-	gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 .group-3 {
-	max-width: 700px;
-	width: 100%;
-	margin: 0 auto;
-	grid-column: 1/-1;
-	display: flex;
-	flex-direction: row;
-	gap: 5rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .group-3 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
-	.profile {
-		margin-bottom: 0;
-	}
-	.group-3 {
-		flex-direction: column;
-	}
+  .profile {
+    margin-bottom: 0;
+  }
+  .group-3 {
+    flex-direction: column;
+  }
 }
 
-.profile{
-    grid-column: 1 / -1;
-    margin-bottom: 2rem;
+.profile {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
 }
 
 /*profile*/
-.profile_container{
-    display: flex;
-    gap: 2rem;
+.profile_container {
+  display: flex;
+  gap: 2rem;
 }
 
-.profile_profileImg{
-    max-width: 250px;
+.profile_profileImg {
+  max-width: 250px;
 }
 
-.firstName{
-    color: #fff;
-    font-weight: 200;
-    font-size: clamp(2rem, 8vw, 4rem);
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: -.8rem;
+.firstName {
+  color: #fff;
+  font-weight: 200;
+  font-size: clamp(2rem, 8vw, 4rem);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
 }
 
-.lastNme{
-    color: #FF7613;
-    font-weight: 700;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    text-transform: uppercase;
-    display: block;
+.lastNme {
+  color: #ff7613;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-transform: uppercase;
+  display: block;
 }
 
-.profile_title{
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.profile_title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-    .profile_container{
-        flex-direction: column;
-    }
+  .profile_container {
+    flex-direction: column;
+  }
 }
 
-
 /*Competences*/
-.competences_list{
-    margin-top: 1rem;
-    margin-left: 2rem;
-    line-height: 2;
+.competences_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
 }
 
 /* formation */
 .item {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .item_name {
-    font-size: 1.6rem;
-    margin-top: 2rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 /* Experience */
 .exp_item {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .exp_date {
-    font-size: 1.4rem;
-    color: #727171;
-    font-weight: 300;
+  font-size: 1.4rem;
+  color: #727171;
+  font-weight: 300;
 }
 .exp_title {
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: 500;
-    margin: 0.8rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0.8rem 0;
 }
 .exp_job {
-    font-size: 1.4rem;
-    color: #727171;
-    font-weight: 400;
+  font-size: 1.4rem;
+  color: #727171;
+  font-weight: 400;
 }
 /* interets */
 .interet {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .interet_items {
-    margin-top: 2rem;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .iteret_item {
-    font-size: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 0.5rem;
-	color: #727171;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #727171;
 }
 
 /* social */
 .social_items {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 .social_item {
-	margin-top: 1.5rem;
-	font-size: 1.5rem;
-	display: flex;
-	gap: 0.5rem;
-	align-items: center;
-	justify-content: flex-start;
-	color: #727171;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: #727171;
 }
 .social_item:hover {
-	color: #FF7613;
+  color: #ff7613;
 }
 
 hr {
-	grid-column: 1/-1;
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 5rem;
-	margin-bottom: 1rem;
-	border: none;
-	border-top: 2px solid rgba(128, 128, 128, 0.229);
+  grid-column: 1/-1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
